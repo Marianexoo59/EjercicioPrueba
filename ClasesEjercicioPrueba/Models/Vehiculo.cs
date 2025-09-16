@@ -12,6 +12,7 @@
         public int CapacidadCarga { get; set; }
         public bool tieneAuxiliar { get; set; }
 
+        public Vehiculo() { }
         public Vehiculo(string patente, string marca, string Modelo, int CapacidadCarga)
         {
             this.patente = patente;

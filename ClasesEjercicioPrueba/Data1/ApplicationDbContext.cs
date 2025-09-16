@@ -12,6 +12,7 @@ namespace ClasesEjercicioPrueba.Data1
     {
         public DbSet<Vehiculo> vehiculos { get; set; }
 
+        public DbSet<Viajes> viaes { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
