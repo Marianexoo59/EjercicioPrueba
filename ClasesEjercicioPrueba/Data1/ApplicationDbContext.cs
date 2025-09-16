@@ -15,7 +15,7 @@ namespace ClasesEjercicioPrueba.Data1
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                "Server=(localdb)\\MSSQLLocalDB;Database=PruebaEF;Trusted_Connection=True;TrustServerCertificate=True;"
+                "Server=localhost;Database=EjemploEF;Trusted_Connection=True;TrustServerCertificate=True;"
             );
         }
 
