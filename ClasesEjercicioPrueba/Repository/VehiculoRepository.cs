@@ -27,14 +27,8 @@ namespace ClasesEjercicioPrueba.Repository
 
         public static bool Corroborarpatente(string patente)
         {
-            foreach (var v in vehiculos)
-            {
-                if (v.patente == patente)
-                {
-                    return true;
-                }
-            }
-            return false;
+            using var context = new ApplicationDbContext();
+            return context.vehiculos.Any(v => v.patente == patente);
         }
     }
 }
